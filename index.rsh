@@ -29,7 +29,7 @@ export const main = Reach.App(() => {
     commit();
 
     Bob.only(() => {
-        interact.log(B32.pad('Contract is transfering 1 USDC to Bob'));
+        interact.log(B32.pad('Bob binds to the contract to get paid'));
     });
     Bob.publish();
     transfer(1000000, tok).to(Bob);
